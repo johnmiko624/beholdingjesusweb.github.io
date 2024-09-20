@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEHOLDING JESUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #FF0000, #0000FF);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 215, 0, 0.2);
+            color: #FFD700;
+            transform: scale(1.1);
+        }
+        .hero {
+            background: url('pic.jpg') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        .hero h1 {
+            font-size: 4em;
+            animation: slideIn 0.5s forwards;
+            opacity: 0;
+            transform: translateY(-50px);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FFD700;
+            font-size: 1.5em;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-links a:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+        .bible-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .bible-links a {
+            margin: 10px 0;
+            color: #FFD700;
+            font-size: 1.2em;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .bible-links a:hover {
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            border: 3px solid #FFD700; /* Add a gold border */
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Church Logo" class="logo" style="width: 150px; height: auto;"> <!-- Replace with your logo image -->
+        <h1>BEHOLDING JESUS CHURCH</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#books">Bible Books</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:beholdingjesuschurch@gmail.com" style="color: #FFD700;">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to BEHOLDING JESUS CHURCH</h1>
+    </div>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>We are a community dedicated to spreading love and faith through our services and outreach programs. Join us as we grow together in Christ.</p>
+            <p>Address: <a href="https://www.google.com/maps?q=B15+L39+M.+Villar+Avenue,+Camella+Springville,+Mill+3,+Bacoor,+Philippines" target="_blank" style="color: #FFD700;">B15 L39 M. Villar Avenue, Camella Springville, Mill 3, Bacoor, Philippines</a></p>
+        </div>
+
+        <div class="section" id="services">
+            <h2>Weekly Schedule</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><strong>Worship Service:</strong> SUN 9 AM</li>
+                <li><strong>Youth Service:</strong> SUN 1:30 PM</li>
+                <li><strong>Bible Class:</strong> TUE 7:30 PM</li>
+                <li><strong>Prayer Night:</strong> WED 7:30 PM</li>
+            </ul>
+        </div>
+
+        <div class="section" id="books">
+            <h2>Bible Books</h2>
+            <div class="bible-links">
+                <h3>Read the Bible Online</h3>
+                <a href="https://www.biblegateway.com/" target="_blank">Bible Gateway</a>
+                <a href="https://www.bible.com/" target="_blank">YouVersion</a>
+                <a href="https://www.esv.org/" target="_blank">ESV Bible</a>
+            </div>
+        </div>
+
+        <div class="section" id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="pic1.jpg" alt="Gallery Image 1"> <!-- Replace with your images -->
+                <img src="pic2.jpg" alt="Gallery Image 2">
+                <img src="pic3.jpg" alt="Gallery Image 3">
+                <img src="pic4.jpg" alt="Gallery Image 4">
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/beholdingjesuschurch" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/beholdingjesuschurch" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Address: <a href="https://www.google.com/maps?q=B15+L39+M.+Villar+Avenue,+Camella+Springville,+Mill+3,+Bacoor,+Philippines" target="_blank" style="color: #FFD700;">B15 L39 M. Villar Avenue, Camella Springville, Mill 3, Bacoor, Philippines</a></p>
+        <p>Email: <a href="mailto:beholdingjesuschurch@gmail.com" style="color: #FFD700;">beholdingjesuschurch@gmail.com</a></p>
+        <p>&copy; 2024 BEHOLDING JESUS CHURCH. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
